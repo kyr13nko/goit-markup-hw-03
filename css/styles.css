@@ -1,0 +1,212 @@
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: #2e2f42;
+  --grey: #2e2f42;
+  --white: #fff;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--slate);
+}
+
+/* Header */
+
+header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--cornflower);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link-studio {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--iris);
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.link-studio-h {
+  color: var(--navy-blue);
+}
+
+.link-studio-f {
+  color: var(--cloud);
+}
+
+.list {
+  list-style: none;
+}
+
+.list-link {
+  color: var(--navy-blue);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.list-link:hover,
+.list-link:focus {
+  color: var(--ocean);
+}
+
+.list-address {
+  color: var(--slate);
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.list-address:hover,
+.list-address:focus {
+  color: var(--ocean);
+}
+
+.main-address {
+  font-style: normal;
+}
+
+/* Studio Main */
+
+/* Studio Main Section 1 */
+
+.studio-sect-one {
+  background-color: var(--navy-blue);
+}
+
+.main-title {
+  color: var(--white);
+  font-size: 56px;
+  text-align: center;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.main-button-index {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  border: none;
+  width: 169px;
+  height: 56px;
+  background: var(--iris);
+  color: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.main-button-index:hover,
+.main-button-index:focus {
+  background: var(--ocean);
+}
+
+/* Studio Main Section 2 */
+
+/* .studio-sect-two {
+  
+} */
+
+.sect-title {
+  color: var(--navy-blue);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.title {
+  color: var(--navy-blue);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.paragr {
+  color: var(--slate);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Studio Main Section 3 */
+
+/* .studio-sect-tree {
+
+} */
+
+/* Studio Main Section 4 */
+
+.studio-sect-four {
+  background-color: var(--cloud);
+}
+
+.list-sect-four {
+  background-color: var(--white);
+}
+
+/* Portfolio Section */
+
+/* Portfolio Buttons  */
+
+.main-button-portfolio {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--iris);
+  height: 48px;
+  background-color: var(--cloud);
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-button-portfolio:active {
+  color: var(--white);
+  background-color: var(--ocean);
+}
+
+/* Portfolio Picture List */
+
+.list-portfolio {
+  background: var(--white);
+  border: 1px solid var(--cornflower);
+}
+
+/* Footer */
+
+.main-footer {
+  background-color: var(--navy-blue-modal);
+}
+
+.main-footer > p {
+  color: var(--cornflower);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
