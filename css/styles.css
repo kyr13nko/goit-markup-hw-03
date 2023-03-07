@@ -22,6 +22,32 @@ body {
   color: var(--slate);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+}
 /* Header */
 
 header {
@@ -33,7 +59,7 @@ header {
   text-decoration: none;
 }
 
-.link-studio {
+.logo-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
@@ -43,15 +69,17 @@ header {
   letter-spacing: 0.03em;
 }
 
-.link-studio-h {
+.logo-link-h {
   color: var(--navy-blue);
 }
 
-.link-studio-f {
+.logo-link-f {
   color: var(--cloud);
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -81,7 +109,7 @@ header {
   color: var(--ocean);
 }
 
-.main-address {
+address {
   font-style: normal;
 }
 
@@ -172,7 +200,17 @@ header {
 
 /* Portfolio Buttons  */
 
-.main-button-portfolio {
+.button-gallery-portfolio {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+.button-list-portfolio {
+  padding-right: 24px;
+}
+
+.button-portfolio {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -184,29 +222,66 @@ header {
   border: 1px solid var(--cornflower);
   border-radius: 4px;
   cursor: pointer;
+
+  padding: 12px 24px;
 }
 
-.main-button-portfolio:active {
+.button-portfolio:active {
   color: var(--white);
   background-color: var(--ocean);
 }
 
 /* Portfolio Picture List */
 
+.gallery-portfolio {
+  /* padding-left: 156px;
+  padding-right: 156px; */
+
+  margin-top: 72px;
+  margin-bottom: 120px;
+
+  width: 1128px;
+}
+
 .list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: -48px;
+  margin-left: -24px;
+}
+
+.list-card-portfolio {
   background: var(--white);
+  flex-basis: calc(100% / 3 - 28px);
   border: 1px solid var(--cornflower);
+
+  margin-top: 48px;
+  margin-left: 24px;
+}
+
+.content-portfolio {
+  padding: 32px 16px;
+}
+
+.content-portfolio > .paragr {
+  padding-top: 8px;
 }
 
 /* Footer */
 
-.main-footer {
+footer {
   background-color: var(--navy-blue-modal);
+  height: 310px;
+  padding-top: 100px;
+  padding-left: 156px;
 }
 
-.main-footer > p {
+footer > p {
   color: var(--cornflower);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 16px;
+  width: 264px;
 }
