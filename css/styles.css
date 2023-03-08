@@ -12,11 +12,6 @@
   --white: #fff;
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-} */
-
 body {
   font-family: "Roboto", sans-serif;
   color: var(--slate);
@@ -28,10 +23,15 @@ h3,
 h4,
 h5,
 h6,
-p,
-ul,
-li {
-  margin: 0;
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 img {
@@ -40,14 +40,30 @@ img {
   height: auto;
 }
 
-.container {
-  width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+button {
+  cursor: pointer;
 }
 
-.section {
+address {
+  font-style: normal;
 }
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* .section {
+} */
+
 /* Header */
 
 header {
@@ -55,9 +71,7 @@ header {
   border-bottom: 1px solid var(--cornflower);
 }
 
-.link {
-  text-decoration: none;
-}
+/* Header Logo */
 
 .logo-link {
   font-family: "Raleway", sans-serif;
@@ -77,11 +91,7 @@ header {
   color: var(--cloud);
 }
 
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+/* Header Menu */
 
 .list-link {
   color: var(--navy-blue);
@@ -96,6 +106,8 @@ header {
   color: var(--ocean);
 }
 
+/* Header Address */
+
 .list-address {
   color: var(--slate);
   font-size: 16px;
@@ -109,17 +121,7 @@ header {
   color: var(--ocean);
 }
 
-address {
-  font-style: normal;
-}
-
 /* Studio Main */
-
-/* Studio Main Section 1 */
-
-.studio-sect-one {
-  background-color: var(--navy-blue);
-}
 
 .main-title {
   color: var(--white);
@@ -128,33 +130,6 @@ address {
   line-height: 1.07;
   letter-spacing: 0.02em;
 }
-
-.main-button-index {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  border: none;
-  width: 169px;
-  height: 56px;
-  background: var(--iris);
-  color: var(--white);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-}
-
-.main-button-index:hover,
-.main-button-index:focus {
-  background: var(--ocean);
-}
-
-/* Studio Main Section 2 */
-
-/* .studio-sect-two {
-  
-} */
 
 .sect-title {
   color: var(--navy-blue);
@@ -180,6 +155,38 @@ address {
   letter-spacing: 0.02em;
 }
 
+/* Studio Main Section 1 */
+
+.studio-sect-one {
+  background-color: var(--navy-blue);
+  padding: 188px 472px;
+}
+
+.main-button-index {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  border: none;
+  background: var(--iris);
+  color: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 16px 32px;
+}
+
+.main-button-index:hover,
+.main-button-index:focus {
+  background: var(--ocean);
+}
+
+/* Studio Main Section 2 */
+
+/* .studio-sect-two {
+  
+} */
+
 /* Studio Main Section 3 */
 
 /* .studio-sect-tree {
@@ -196,17 +203,16 @@ address {
   background-color: var(--white);
 }
 
-/* Portfolio Section */
+/* Portfolio Main Section */
 
-/* Portfolio Buttons  */
+/* Portfolio Main Buttons  */
 
 .button-gallery-portfolio {
   display: flex;
   justify-content: center;
-  padding: 24px;
 }
 
-.button-list-portfolio {
+.button-list-portfolio:not(:last-child) {
   padding-right: 24px;
 }
 
@@ -221,8 +227,6 @@ address {
   background-color: var(--cloud);
   border: 1px solid var(--cornflower);
   border-radius: 4px;
-  cursor: pointer;
-
   padding: 12px 24px;
 }
 
@@ -231,16 +235,11 @@ address {
   background-color: var(--ocean);
 }
 
-/* Portfolio Picture List */
+/* Portfolio Main Gallery */
 
 .gallery-portfolio {
-  /* padding-left: 156px;
-  padding-right: 156px; */
-
-  margin-top: 72px;
-  margin-bottom: 120px;
-
   width: 1128px;
+  margin: 0 auto;
 }
 
 .list-portfolio {
@@ -253,7 +252,7 @@ address {
 
 .list-card-portfolio {
   background: var(--white);
-  flex-basis: calc(100% / 3 - 28px);
+  flex-basis: calc(100% / 3 - 24px);
   border: 1px solid var(--cornflower);
 
   margin-top: 48px;
@@ -272,9 +271,8 @@ address {
 
 footer {
   background-color: var(--navy-blue-modal);
-  height: 310px;
-  padding-top: 100px;
-  padding-left: 156px;
+  /* height: 310px; */
+  padding: 100px 0 100px 156px;
 }
 
 footer > p {
