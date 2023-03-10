@@ -54,6 +54,10 @@ address {
   padding: 0 15px;
 }
 
+.section {
+  padding-bottom: 120px;
+}
+
 .link {
   text-decoration: none;
 }
@@ -62,82 +66,15 @@ address {
   list-style: none;
 }
 
-.section:nth-child(3) {
-  padding-bottom: 120px;
-}
-
-.section:not(:nth-child(3)) {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-/* Header */
-
-header {
-  background-color: var(--white);
-  border-bottom: 1px solid var(--cornflower);
-}
-
-/* Header Logo */
-
-.logo-link {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: var(--iris);
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-}
-
-.logo-link-h {
-  color: var(--navy-blue);
-}
-
-.logo-link-f {
-  color: var(--cloud);
-}
-
-/* Header Menu */
-
-.list-link {
-  color: var(--navy-blue);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
-.list-link:hover,
-.list-link:focus {
-  color: var(--ocean);
-}
-
-/* Header Address */
-
-.list-address {
-  color: var(--slate);
-  font-size: 16px;
-  line-height: 24px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
-.list-address:hover,
-.list-address:focus {
-  color: var(--ocean);
-}
-
-/* ----------- */
-/* Studio Main */
-/* ----------- */
-
-.title-main {
+.main-title {
   color: var(--white);
   font-size: 56px;
   text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
+
+  width: 496px;
+  margin: 0 auto;
 }
 
 .sect-title {
@@ -148,7 +85,7 @@ header {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
 }
 
 .title {
@@ -158,19 +95,112 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
 
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
-.paragr {
+.paragraph {
   color: var(--slate);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  margin-top: 8px;
+}
+
+/* ++++ Header ++++ */
+
+.page-header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--cornflower);
+  padding: 24px 0;
+}
+
+/* ==== Header Logo ==== */
+
+.logo-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--iris);
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  margin-right: 76px;
+}
+
+.logo-link-header {
+  color: var(--navy-blue);
+}
+
+.logo-link-footer {
+  color: var(--cloud);
+}
+
+/* === Header Nav ==== */
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  /* gap: 76px; */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  /* gap: 40px; */
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+.menu-link {
+  color: var(--navy-blue);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-/* ------------------------ */
-/* Studio Main Section Hero */
-/* ------------------------ */
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--ocean);
+}
+
+/* ==== Header Address ==== */
+
+.address-menu {
+  display: flex;
+  align-items: center;
+  /* gap: 40px; */
+}
+
+.address-menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.address-menu-link {
+  color: var(--slate);
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.address-menu-link:hover,
+.address-menu-link:focus {
+  color: var(--ocean);
+}
+
+/* ++++ Studio Main ++++ */
+
+/* ==== Studio Section Hero ==== */
 
 .studio-hero {
   background-color: var(--navy-blue);
@@ -178,13 +208,7 @@ header {
   text-align: center;
 }
 
-.studio-hero > .container > .title-main {
-  width: 496px;
-  margin: 0 auto;
-  margin-bottom: 48px;
-}
-
-.button-main {
+.main-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   border: none;
@@ -196,18 +220,19 @@ header {
   line-height: 1.5;
   letter-spacing: 0.04em;
   padding: 16px 32px;
+  margin-top: 48px;
 }
 
-.button-main:hover,
-.button-main:focus {
+.main-btn:hover,
+.main-btn:focus {
   background: var(--ocean);
 }
 
-/* Studio Main Section 1 */
+/* ==== Studio Section 1 ==== */
 
-/* .studio-sect-one {
-  
-} */
+.studio-sect-one {
+  padding-top: 120px;
+}
 
 .list-studio-sect-one {
   display: flex;
@@ -216,51 +241,50 @@ header {
   margin-left: -24px;
 }
 
-.list-card-studio-sect-one {
+.card-studio-sect-one {
   background: var(--white);
   flex-basis: calc(100% / 4 - 24px);
 
   margin-left: 24px;
 }
 
-/* Studio Main Section 2 */
-
-/* .studio-sect-two {
-
-} */
+/* ==== Studio Section 2 ==== */
 
 .list-studio-sect-two {
   display: flex;
   flex-wrap: wrap;
 
+  margin-top: 72px;
   margin-left: -24px;
 }
 
-.list-card-studio-sect-two {
+.card-studio-sect-two {
   flex-basis: calc(100% / 3 - 24px);
 
   margin-left: 24px;
 }
 
-/* Studio Main Section 3 */
+/* ==== Studio Section 3 ==== */
 
 .studio-sect-three {
   background-color: var(--cloud);
+  padding-top: 120px;
 }
 
 .list-studio-sect-three {
   display: flex;
   flex-wrap: wrap;
 
+  margin-top: 72px;
   margin-left: -24px;
 }
 
-.list-card-studio-sect-three {
+.card-studio-sect-three {
   background-color: var(--white);
   flex-basis: calc(100% / 4 - 24px);
 
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 
   margin-left: 24px;
@@ -271,24 +295,23 @@ header {
   text-align: center;
 }
 
-/* ---------------------- */
-/* Portfolio Main Section */
-/* ---------------------- */
+/* ++++ Portfolio Section ++++ */
 
-/* Portfolio Main Buttons  */
+/* ==== Portfolio Buttons ==== */
 
-.button-gallery-portfolio {
+.portfolio-btn-menu {
   display: flex;
   justify-content: center;
+  /* gap: 24px; */
   padding-top: 93px;
   padding-bottom: 75px;
 }
 
-.button-list-portfolio:not(:last-child) {
+.portfolio-btn-item:not(:last-child) {
   margin-right: 24px;
 }
 
-.button-portfolio {
+.portfolio-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -302,18 +325,14 @@ header {
   padding: 12px 24px;
 }
 
-.button-portfolio:active {
+.portfolio-btn:active {
   color: var(--white);
   background-color: var(--ocean);
 }
 
-/* Portfolio Gallery */
+/* ==== Portfolio Gallery ==== */
 
-.gallery-portfolio {
-  padding-bottom: 120px;
-}
-
-.list-portfolio {
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
 
@@ -321,28 +340,31 @@ header {
   margin-left: -24px;
 }
 
-.list-card-portfolio {
+.portfolio-item {
   background: var(--white);
   flex-basis: calc(100% / 3 - 24px);
-  border: 1px solid var(--cornflower);
 
   margin-top: 48px;
   margin-left: 24px;
 }
 
-.content-portfolio {
+.portfolio-item-content {
+  border-right: 1px solid var(--cornflower);
+  border-bottom: 1px solid var(--cornflower);
+  border-left: 1px solid var(--cornflower);
+
   padding: 32px 16px;
 }
 
-/* Footer */
+/* ++++ Footer ++++ */
 
-footer {
+.page-footer {
   background-color: var(--navy-blue-modal);
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.container > p {
+.footer-paragraph {
   color: var(--cornflower);
   font-size: 16px;
   line-height: 1.5;
