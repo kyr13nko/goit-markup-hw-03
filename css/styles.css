@@ -58,6 +58,11 @@ address {
   padding-bottom: 120px;
 }
 
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 .link {
   text-decoration: none;
 }
@@ -125,8 +130,6 @@ address {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-
-  margin-right: 76px;
 }
 
 .logo-link-header {
@@ -154,6 +157,7 @@ address {
 .menu {
   display: flex;
   align-items: center;
+  margin-left: 76px;
   /* gap: 40px; */
 }
 
@@ -291,7 +295,7 @@ address {
 }
 
 .content-studio-sect-three {
-  padding: 16px 32px;
+  padding: 32px 16px;
   text-align: center;
 }
 
@@ -303,8 +307,7 @@ address {
   display: flex;
   justify-content: center;
   /* gap: 24px; */
-  padding-top: 93px;
-  padding-bottom: 75px;
+  margin-bottom: 72px;
 }
 
 .portfolio-btn-item:not(:last-child) {
